@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate — A Different Life</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/donate.css">
+</head>
+<body class="donate">
+
+<header class="main-header">
+  <div class="logo-area">
+    <img src="images/download.jpg" alt="A Different Life Logo" class="logo_img">
+    <div class="logo-text">
+      <p>a different life</p>
+      <p>Youth Hub</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="our-hub.html">Our Youth Hub</a>
+
+    <a href="blog.html"></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="donate.html" class="donate-btn">Donate</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Support Our Mission</h2>
+    <p>Your contribution helps us empower youth and communities in Ghana. Every donation counts!</p>
+  </section>
+
+  <!-- Donation Form Box -->
+<section class="donation-box">
+  <h3>Make a Donation</h3>
+
+  <!-- Donation Type Toggle -->
+  <div class="donation-type">
+    <button type="button" class="donation-btn active" data-type="personal">Personal Donation</button>
+    <button type="button" class="donation-btn" data-type="company">Company Donation</button>
+  </div>
+
+  <form id="donation-form" action="#" method="POST">
+
+    <!-- How Often -->
+    <label for="frequency">How often will you donate?</label>
+    <select id="frequency" name="frequency" required>
+      <option value="once">Once</option>
+      <option value="monthly">Monthly</option>
+      <option value="yearly">Yearly</option>
+    </select>
+
+    <!-- Amount -->
+    <label for="amount">Donation amount (€)</label>
+    <input type="number" id="amount" name="amount" placeholder="50" required>
+
+    <!-- Payment Method -->
+    <label for="payment">Payment Method</label>
+    <select id="payment" name="payment" required>
+      <option value="paypal">PayPal</option>
+      <option value="sepa">SEPA Direct Debit</option>
+      <option value="credit">Credit Card</option>
+      <option value="wire">Wire Transfer</option>
+    </select>
+
+    <!-- Personal Donation Fields -->
+    <div class="personal-fields donation-fields">
+      <label for="first-name">First Name*</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="last-name">Last Name*</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- Company Donation Fields -->
+    <div class="company-fields donation-fields" style="display: none;">
+      <label for="company-name">Legal Company Name*</label>
+      <input type="text" id="company-name" name="company-name">
+
+      <label for="street">Street, number*</label>
+      <input type="text" id="street" name="street">
+
+      <label for="city">City*</label>
+      <input type="text" id="city" name="city">
+
+      <label for="zip">Zip*</label>
+      <input type="text" id="zip" name="zip">
+
+      <label for="country">Country*</label>
+      <select id="country" name="country">
+        <option value="Germany">Germany</option>
+        <option value="France">France</option>
+        <option value="USA">USA</option>
+        <option value="Ghana">Ghana</option>
+        <!-- Add more countries -->
+      </select>
+    </div>
+
+    <!-- Payment-specific Fields -->
+    <div class="payment-info">
+
+      <!-- PayPal -->
+      <div class="paypal-fields payment-fields">
+        <label for="paypal-email">PayPal Email*</label>
+        <input type="email" id="paypal-email" name="paypal-email">
+      </div>
+
+      <!-- SEPA Direct Debit -->
+      <div class="sepa-fields payment-fields" style="display: none;">
+        <label for="iban">IBAN*</label>
+        <input type="text" id="iban" name="iban">
+        <label for="bic">BIC*</label>
+        <input type="text" id="bic" name="bic">
+      </div>
+
+      <!-- Credit Card -->
+      <div class="credit-fields payment-fields" style="display: none;">
+        <label for="card-number">Card Number*</label>
+        <input type="text" id="card-number" name="card-number">
+        <label for="expiry">Expiry Date*</label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+        <label for="cvv">CVV*</label>
+        <input type="text" id="cvv" name="cvv">
+        <label for="card-holder">Card Holder Name*</label>
+        <input type="text" id="card-holder" name="card-holder">
+      </div>
+
+      <!-- Wire Transfer -->
+      <div class="wire-fields payment-fields" style="display: none;">
+        <label for="wire-bank">Bank Name*</label>
+        <input type="text" id="wire-bank" name="wire-bank">
+        <label for="wire-iban">IBAN*</label>
+        <input type="text" id="wire-iban" name="wire-iban">
+        <label for="wire-bic">BIC*</label>
+        <input type="text" id="wire-bic" name="wire-bic">
+      </div>
+
+    </div>
+
+    <!-- Human Verification -->
+    <label for="human-verification">You are human (e.g., 5 + 2 = ?)</label>
+    <input type="text" id="human-verification" name="human-verification" required>
+
+    <button type="submit" class="btn btn-primary">Continue</button>
+
+    <!-- Logos Placeholder -->
+    <div class="logos">
+      <div class="logo-item"><img src="images/ssl.png" alt="SSL Logo"></div>
+      <div class="logo-item"><img src="images/friendly-captcha.png" alt="FriendlyCaptcha"></div>
+    </div>
+
+    <p class="donation-info">This donation form is provided by betterplace.org</p>
+    <p class="donation-info"><a href="#">Information about transaction costs</a> | <a href="#">Privacy Policy</a></p>
+  </form>
+</section>
+
+<section class="bank-transfer">
+  <h2>You prefer making a bank transfer?</h2>
+
+  <div class="bank-content">
+    <img src="images/banklogo.png" alt="bank-transfer" class="bank-logo">
+
+    <div class="bank-text">
+      <p>That’s also great and works for one-time transfers or for setting up standing orders:</p>
+      <p>Name: <b><strong>a different life e.V.</strong></b></p>
+      <p>IBAN: <b><strong>DE33 6006 9527 0069 8700 04</strong></b></p>
+      <p>BIC: <b><strong>GENODES1RNS</strong></b></p>
+      <p>Bank name: <b><strong>Volksbank Brenztal</strong></b></p>
+      <p>Purpose: <b><strong>Youth Hub Ghana</strong></b></p>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero">
+  <h2> JOIN OUR GODPARENT COMMUNITY</h2>
+  <p>Join our community of generous donors, no matter how big or small your donation is, or whether you donate once or regularly. Your support is fueling the transformation of Agona Nsaba with our Youth Empowerment Hub.
+    As a godparent, your donation is a <b>direct investment in the future of over 1,000 schoolchildren, teenagers, and young adults</b> in the community.
+While every cent counts, regular donations are the most sustainable form of helping us offer opportunities for our beneficiaries to thrive, grow, and make meaningful contributions to their own lives and their community. Thank you! ♥
+  </p>
+</section>
+</main>
+
+<  <!-- Footer -->
+ <footer class="main-footer">
+  <div class="footer-container">
+
+    <!-- Footer Logo -->
+    <div class="footer-logo">
+      <img src="../images/footlogo.gif" alt="A Different Life Logo">
+    </div>
+
+    <!-- Footer Info -->
+    <div class="footer-info">
+      <p>© 2026 A Different Life NGO</p>
+      <p>Email: hi@a-different-life.org</p>
+      <p>Phone: +49 (0)162 912 5495</p>
+    </div>
+
+    <!-- Social Media Links -->
+   <div class="footer-socials">
+  <a href="https://www.instagram.com" aria-label="Instagram">
+    <img src="../images/instagram.png" alt="Instagram">
+  </a>
+  <a href="https://web.facebook.com/a.different.life.org/?_rdc=1&_rdr#" aria-label="Facebook">
+    <img src="../images/facebook.png" alt="Facebook">
+  </a>
+
+  <a href="https://www.twitter.com" aria-label="Twitter">
+    <img src="../images/twitter.png" alt="Twitter">
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+<script src="donation.js"></script>
+
+</body>
+</html>

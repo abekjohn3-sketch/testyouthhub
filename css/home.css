@@ -1,0 +1,73 @@
+/* =========================
+   HOME PAGE BACKGROUND
+========================= */
+
+/* Apply background ONLY to home page body */
+body.home-page {
+  background-image: url("../images/56866011.jpg"); /* adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Wrapper that contains ALL home content */
+.home-wrapper {
+  padding-bottom: 40px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  background: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  padding: 80px 30px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #1b5e20;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 750px;
+  margin: 0 auto 20px;
+}
+
+/* =========================
+   HOME SECTIONS
+========================= */
+.what-we-offer,
+.our-vision,
+.principles,
+.donate-section,
+.newsletter-signup {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+/* =========================
+   DONATE SECTION
+========================= */
+.donate-section {
+  text-align: center;
+}
+
+.donate-section h2 {
+  color: #1b5e20;
+}
+
+/* =========================
+   FIX: STOP BACKGROUND BEFORE FOOTER
+========================= */
+
+/* This ensures footer is NOT transparent */
+footer {
+  background-color: #2f7d32;
+}
+
+/* Prevent background bleeding */
+body.home-page footer {
+  background-image: none;
+}

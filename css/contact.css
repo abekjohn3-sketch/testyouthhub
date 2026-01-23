@@ -1,0 +1,116 @@
+/* =========================
+   CONTACT PAGE ONLY
+========================= */
+
+/* Page background */
+body.contact {
+  background-color: #f4faf4;
+}
+
+/* Main wrapper spacing */
+.contact-section {
+  padding: 40px 20px 20px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+body.contact .hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+body.contact .hero h2 {
+  color: #1b5e20;
+  font-size: 2rem;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+body.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Form labels */
+body.contact form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+/* Inputs & textarea */
+body.contact form input[type="text"],
+body.contact form input[type="email"],
+body.contact form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+body.contact form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+/* Checkbox alignment */
+body.contact form p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+body.contact form input[type="checkbox"] {
+  margin-top: 4px;
+}
+
+/* Button spacing */
+body.contact form button {
+  margin-top: 25px;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+body.contact .newsletter-signup {
+  text-align: center;
+}
+
+body.contact .newsletter-signup h3 {
+  color: #1b5e20;
+}
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+body.contact .contact-info {
+  font-size: 0.95rem;
+}
+
+body.contact .contact-info h3 {
+  color: #1b5e20;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  body.contact .hero {
+    padding: 40px 15px;
+  }
+
+  body.contact form {
+    padding: 0 10px;
+  }
+}

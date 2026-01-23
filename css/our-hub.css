@@ -1,0 +1,187 @@
+/* ENTIRE PAGE BACKGROUND IMG */
+body.our-hub {
+  background-image: url("../images/56866011.jpg"); /* adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ====================
+   OUR YOUTH HUB PAGE STYLES
+==================== */
+
+.youth-hub main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ===== HERO ===== */
+.yh-hero {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 60px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.yh-hero h1 {
+  color: #1b5e20;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+.yh-hero p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.yh-hero .hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== WHY THE HUB ===== */
+.yh-section {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.yh-section h2 {
+  color: #1b5e20;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Construction gallery - auto arrange */
+.yh-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.yh-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.yh-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== FEATURES ===== */
+.yh-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.yh-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s;
+}
+
+.yh-card:hover {
+  transform: translateY(-5px);
+}
+
+.yh-card h3 {
+  color: #1b5e20;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.yh-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.yh-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== CALL TO ACTION ===== */
+.yh-cta {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 60px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.yh-cta h2 {
+  color: #1b5e20;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.yh-cta p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .yh-hero .hero-img,
+  .yh-gallery img,
+  .yh-card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .yh-hero {
+    padding: 50px 20px;
+  }
+
+  .yh-section {
+    padding: 40px 20px;
+  }
+
+  .yh-cta {
+    padding: 50px 20px;
+  }
+
+  .yh-hero h1 {
+    font-size: 2rem;
+  }
+
+  .yh-section h2,
+  .yh-cta h2 {
+    font-size: 1.7rem;
+  }
+}
