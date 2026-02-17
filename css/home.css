@@ -4,7 +4,7 @@
 
 /* Apply background ONLY to home page body */
 body.home-page {
-  background-image: url("../images/56866011.jpg"); /* adjust path if needed */
+  background-image: url("../images/yb pics/e8a76818-6757-4bd4-8b82-032945383810.JPG"); /* adjust path if needed */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body.home-page {
    HERO SECTION
 ========================= */
 .hero {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.85);
   text-align: center;
   padding: 80px 30px;
 }
@@ -44,7 +44,7 @@ body.home-page {
 .principles,
 .donate-section,
 .newsletter-signup {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.82);
 }
 
 /* =========================
